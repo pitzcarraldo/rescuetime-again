@@ -105,7 +105,7 @@ function init() {
 //get the data using rescuetime api
 function getData(params) {
     var rescuetimeAPI = 'https://www.rescuetime.com/anapi/data?';
-    $.getJSON(rescuetimeAPI, {
+    $.getJSON('https://proxy.cors.sh/' + rescuetimeAPI, {
         key: params.key,
         perspective: params.perspective,
         restrict_kind: params.restrict_kind,
